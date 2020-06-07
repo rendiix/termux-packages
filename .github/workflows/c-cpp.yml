@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: update ubuntu
-      run: mkdir -p /data/data/com.termux/files/usr
+      run: sudo mkdir -p /data/data/com.termux/files/usr
     - name: setup-ubuntu
       run: ./scripts/setup-ubuntu.sh
