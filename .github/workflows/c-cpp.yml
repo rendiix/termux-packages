@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: ./build-all.sh
+      run: ./scripts/setup-ubuntu.sh
