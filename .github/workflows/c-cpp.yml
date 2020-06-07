@@ -19,3 +19,5 @@ jobs:
             sudo mkdir -p /data/data/com.termux/files/usr
     - name: setup-ubuntu
       run: ./scripts/setup-ubuntu.sh
+    - name: build all
+      run: ./build-all.sh
