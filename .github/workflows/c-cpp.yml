@@ -18,6 +18,8 @@ jobs:
             sudo apt-get update && sudo apt-get upgrade
             sudo mkdir -p /data/data/com.termux/files/usr
     - name: setup-ubuntu
-      run: ./scripts/setup-ubuntu.sh
+      run: |
+           ./scripts/setup-ubuntu.sh
+           ./scripts/setup-android-sdk.sh
     - name: build all
       run: ./build-all.sh
