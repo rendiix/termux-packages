@@ -16,6 +16,9 @@ if [ "$TERMUX_NDK_VERSION" = "26b" ]; then
 elif [ "$TERMUX_NDK_VERSION" = 23c ]; then
 	ANDROID_NDK_FILE=android-ndk-r${TERMUX_NDK_VERSION}-linux.zip
 	ANDROID_NDK_SHA256=6ce94604b77d28113ecd588d425363624a5228d9662450c48d2e4053f8039242
+elif [ "$TERMUX_NDK_VERSION" = "27-beta2"]; then
+	ANDROID_NDK_FILE=android-ndk-r${TERMUX_NDK_VERSION}-linux.zip
+	ANDROID_NDK_SHA256=8c83e189f6f1da431f6ffd55a77f07a3bf2ae41ce9dd7c562a61637bfcd62f10
 else
 	echo "ERROR: unknown NDK version $TERMUX_NDK_VERSION" >&2
 	exit 1
