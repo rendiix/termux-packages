@@ -22,7 +22,7 @@ termux_setup_toolchain_gnu() {
 
 	export PATH_DYNAMIC_LINKER="$TERMUX_PREFIX/lib/"
 	if [ "$TERMUX_ARCH" = "aarch64" ]; then
-		CFLAGS+=" -march=armv8-a"
+		CFLAGS+=" -march=armv9-a -mtune=cortex-a720"
 		PATH_DYNAMIC_LINKER+="ld-linux-aarch64.so.1"
 	elif [ "$TERMUX_ARCH" = "arm" ]; then
 		CFLAGS+=" -march=armv7-a -mfloat-abi=hard -mfpu=neon"
