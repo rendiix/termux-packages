@@ -138,7 +138,6 @@ PACKAGES+=" ruby"
 PACKAGES+=" libc-ares-dev"
 PACKAGES+=" libc-ares-dev:i386"
 PACKAGES+=" libicu-dev"
-PACKAGES+=" libsqlite3-dev:i386"
 
 # Needed by php.
 PACKAGES+=" re2c"
